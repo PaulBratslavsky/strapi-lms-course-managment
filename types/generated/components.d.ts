@@ -60,6 +60,7 @@ export interface ElementsHeader extends Struct.ComponentSchema {
   };
   attributes: {
     cta: Schema.Attribute.Component<'elements.link', false>;
+    logoImage: Schema.Attribute.Media<'images'>;
     logoText: Schema.Attribute.Component<'elements.link', false>;
     navItems: Schema.Attribute.Component<'elements.link', true>;
     showSignUp: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;

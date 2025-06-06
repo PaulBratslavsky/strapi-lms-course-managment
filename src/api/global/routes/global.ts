@@ -4,4 +4,10 @@
 
 import { factories } from '@strapi/strapi';
 
-export default factories.createCoreRouter('api::global.global');
+export default factories.createCoreRouter('api::global.global', {
+  config: {
+    find: {
+      middlewares: ['api::global.global-data-populate'],
+    },
+  },
+});

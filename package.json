@@ -4,15 +4,25 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "develop": "strapi develop",
-    "dev": "strapi develop",
-    "start": "strapi start",
     "build": "strapi build",
     "console": "strapi console",
-    "strapi": "strapi",
     "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.14.0",
+    "@strapi/plugin-users-permissions": "5.14.0",
+    "@strapi/strapi": "5.14.0",
+    "better-sqlite3": "11.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -20,26 +30,12 @@
     "@types/react-dom": "^18",
     "typescript": "^5"
   },
-  "dependencies": {
-    "@strapi/plugin-cloud": " 5.14.0",
-    "@strapi/plugin-users-permissions": " 5.14.0",
-    "@strapi/strapi": " 5.14.0",
-    "better-sqlite3": "^11.1.2",
-    "pg": "8.8.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "^6.0.0",
-    "styled-components": "^6.0.0"
-  },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "23a78f4a-6005-40bc-9400-fc6026295153"
-  },
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "strapi": {
+    "uuid": "a45f9ab5-3e85-4e44-bfa1-c4811b789f71",
+    "installId": "583e9b4bfc2f0677b461ffcede13d8a7143b1ab1599122f9a0adb65ff9c76f03"
+  }
 }

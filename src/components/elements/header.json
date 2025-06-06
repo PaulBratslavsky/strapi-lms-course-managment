@@ -8,22 +8,29 @@
   "attributes": {
     "logoText": {
       "type": "component",
-      "repeatable": false,
-      "component": "elements.link"
+      "component": "elements.link",
+      "repeatable": false
     },
     "navItems": {
       "type": "component",
-      "repeatable": true,
-      "component": "elements.link"
+      "component": "elements.link",
+      "repeatable": true
     },
     "cta": {
       "type": "component",
-      "repeatable": false,
-      "component": "elements.link"
+      "component": "elements.link",
+      "repeatable": false
     },
     "showSignUp": {
       "type": "boolean",
       "default": false
+    },
+    "logoImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
