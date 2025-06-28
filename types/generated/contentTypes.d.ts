@@ -565,6 +565,7 @@ export interface ApiUserProfileUserProfile extends Struct.CollectionTypeSchema {
       'api::course.course'
     >;
     githubLink: Schema.Attribute.String;
+    isPublic: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -576,10 +577,6 @@ export interface ApiUserProfileUserProfile extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    user: Schema.Attribute.Relation<
-      'oneToOne',
-      'plugin::users-permissions.user'
-    >;
   };
 }
 

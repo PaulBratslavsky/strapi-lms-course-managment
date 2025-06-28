@@ -26,16 +26,14 @@
       "relation": "oneToMany",
       "target": "api::course.course"
     },
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "userProfile"
-    },
     "completedLessons": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::lesson.lesson"
+    },
+    "isPublic": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
